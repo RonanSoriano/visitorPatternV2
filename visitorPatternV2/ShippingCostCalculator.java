@@ -8,12 +8,12 @@ public class ShippingCostCalculator implements FurnitureType {
 
     @Override
     public double calculateShippingCost(Chair chair) {
-        return shippingPerItem * chair.getQuantity();
+        return chair.getQuantity() * shippingPerItem ;
     }
 
     @Override
     public double calculateShippingCost(Table table) {
-        return shippingPerSize * table.getSize();
+        return table.getSize() * shippingPerSize;
     }
 
     @Override

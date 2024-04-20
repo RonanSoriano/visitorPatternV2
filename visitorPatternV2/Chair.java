@@ -12,7 +12,7 @@ public class Chair implements Furniture {
     }
 
     @Override
-    public double accept(FurnitureType visitor) {
-        return visitor.calculateShippingCost(this);
+    public double accept(FurnitureType furnitureType) {
+        return furnitureType.calculateShippingCost(this);
     }
 }
